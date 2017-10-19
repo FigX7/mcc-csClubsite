@@ -40,9 +40,15 @@ function toggleFunction() {
 document.getElementById("loginBtn").onclick = function() {myHide()};
 
 function myHide() {
-  var x =  document.getElementById("cont_centrar");
-  
+  var x =  document.getElementById("signInForm");
+  if(x.style.visibility=='hidden'){
+	  x.style.visibility = "visible";
+  }else{
+	  x.style.visibility = "hidden";
+  }
 }
+ 
+
 
 function sign_up(){
 	  var inputs = document.querySelectorAll('.input_form_sign');
