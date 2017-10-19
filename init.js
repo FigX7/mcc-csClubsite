@@ -41,10 +41,10 @@ document.getElementById("loginBtn").onclick = function() {myHide()};
 
 function myHide() {
   var x =  document.getElementById("signInForm");
-  if(x.style.visibility=='hidden'){
-	  x.style.visibility = "visible";
+  if(x.style.display=='none'){
+	  x.style.display = 'block';
   }else{
-	  x.style.visibility = "hidden";
+	  x.style.display = "none";
   }
 }
  
