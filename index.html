@@ -134,18 +134,12 @@ body, html {
     
 
   
-  <li style = "float:right" class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">
+ 
+    <a id="loginBtn" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red" onclick="myHide()">
 		<i class="fa fa-sign-in">
         </i> LOGIN
 	</a>
-    
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </li>
+
 
       
    
@@ -474,23 +468,7 @@ body, html {
   <!-- TODO: Evalutate if this is necessary -->
   <!-- Modal for full size images on click-->
 
-  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display=&#39;none&#39;">
 
-    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
-      <i class="fa fa-remove">
-      </i>
-    </span>
-
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-
-      <img id="img01" class="w3-image">
-
-      <p id="caption" class="w3-opacity w3-large">
-      </p>
-
-    </div>
-
-  </div>
 
 
   <!-- Third Parallax Image with Portfolio Text -->
@@ -833,10 +811,10 @@ body, html {
 
 </div>
 <!-- Login -->
- <div class="w3-content w3-container w3-padding-64" id="login">
 
-  <h3 class="w3-center"><b>Login</b>
-  </h3>
+  
+
+
 
 <!-- Footer -->
 
@@ -877,7 +855,48 @@ body, html {
 <p>Site brought to you by student members of the MiraCosta Computer Science Club.</a></p>
 </font>
 
-</footer>
+</footer><div class="cont_principal">
+
+  <div class="cont_centrar" >
+  <div class="cont_login">
+    <form action="">
+    <div class="cont_tabs_login">
+      <ul class="ul_tabs">
+        <li class="active"><a href="#" onclick="sign_in()">SIGN IN</a>
+        <span class="linea_bajo_nom"></span>
+        </li>
+        <li><a href="#up" onclick="sign_up()">SIGN UP</a><span class="linea_bajo_nom"></span>
+        </li>
+      </ul>
+      </div>
+  <div class="cont_text_inputs">
+      <input type="text" class="input_form_sign " placeholder="NAME" name="name_us">
+    
+    <input type="text" class="input_form_sign d_block active_inp" placeholder="EMAIL" name="emauil_us">
+
+    <input type="password" class="input_form_sign d_block  active_inp" placeholder="PASSWORD" name="pass_us">  
+   <input type="password" class="input_form_sign" placeholder="CONFIRM PASSWORD" name="conf_pass_us">
+    
+    <a href="#" class="link_forgot_pass d_block">Forgot Password ?</a>    
+<div class="terms_and_cons d_none">
+    <p><input type="checkbox" name="terms_and_cons"> <label for="terms_and_cons">Accept  Terms and Conditions.</label></p>
+  
+    </div>
+      </div>
+<div class="cont_btn">
+     <button class="btn_sign">SIGN IN</button>
+      
+      </div>
+      
+    </form>
+    </div>
+    
+  </div>
+  
+
+</div>
+
+
 
 <!-- Add Google Maps -->
 
